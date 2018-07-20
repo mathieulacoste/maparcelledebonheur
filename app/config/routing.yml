@@ -1,0 +1,7 @@
+ma_parcelle_de_bonheur:
+    resource: "@MaParcelleDeBonheurBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

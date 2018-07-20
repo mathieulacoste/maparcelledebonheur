@@ -1,0 +1,35 @@
+ma_parcelle_de_bonheur_homepage:
+    path:     /homepage
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:homepage }
+
+ma_parcelle_de_bonheur_le_concept:
+    path:     /le_concept
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:leconcept }
+
+ma_parcelle_de_bonheur_ma_parcelle:
+    path:     /ma_parcelle
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:maparcelle }
+
+ma_parcelle_de_bonheur_le_kit_du_jardinier:
+    path:     /mon_kit_du_jardinier
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:lekitdujardinier }
+
+ma_parcelle_de_bonheur_les_plus_du_patron:
+    path:     /les_plus_du_patron
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:lesplusdupatron }
+
+ma_parcelle_de_bonheur_reserver:
+    path:     /reservation
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:reserver }
+
+ma_parcelle_de_bonheur_admin:
+    path:     /admin
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:admin }
+
+ma_parcelle_de_bonheur_admin_parcelles:
+    path:     /admin/parcelles
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:gestiondesparcelles }
+
+ma_parcelle_de_bonheur_admin_articles:
+    path:     /admin/articles
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:gestiondesarticles }
