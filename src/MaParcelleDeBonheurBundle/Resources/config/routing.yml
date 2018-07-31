@@ -1,5 +1,5 @@
 ma_parcelle_de_bonheur_homepage:
-    path:     /homepage
+    path:     /
     defaults: { _controller: MaParcelleDeBonheurBundle:Default:homepage }
 
 ma_parcelle_de_bonheur_le_concept:
