@@ -10,17 +10,60 @@
     <link rel="icon" sizes="32x32" href="{{ asset('assets/images/favicons/favicon-32.png') }}" type="image/png">
     <link rel="icon" sizes="64x64" href="{{ asset('assets/images/favicons/favicon-64.png') }}" type="image/png">
     <link rel="icon" sizes="96x96" href="{{ asset('assets/images/favicons/favicon-96.png') }}" type="image/png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Ma Parcelle de Bonheur</title>
 </head>
+
 <body>
 
-{%  block content %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ">
+                <div class="nav-item ">
+                    <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_le_concept') }}">Le concept</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_ma_parcelle') }}">Ma parcelle</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_le_kit_du_jardinier') }}">Mon kit du jardinier</a>
+                </div>
+                <div class="nav-item">
+                    <a href="{{ path('ma_parcelle_de_bonheur_homepage') }}"><img src="{{ asset('assets/images/LogoMatius.png') }}" alt=""></a>
+                </div>
+                <div class="nav-item ">
+                    <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_les_plus_du_patron') }}">Les Plus du patron</a>
+                </div>
+                <div class="nav-item ">
+                    <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_reserver') }}">Réservation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+{% block content %}
 
 {% endblock %}
 
+<footer>
+    <div></div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 </html>
