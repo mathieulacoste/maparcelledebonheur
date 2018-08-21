@@ -1,0 +1,15 @@
+.footer {
+  height: 60px;
+  background-color: #0088CC;
+  font-size: 0.7em;
+}
+
+.footer p {
+  margin:0;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 0.6em;
+  }
+}
