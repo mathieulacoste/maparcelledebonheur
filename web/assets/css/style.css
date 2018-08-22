@@ -2,11 +2,11 @@ body, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Oswald; }
+  font-family: Calibri; }
 
 .imgdefond {
   width: 100%;
-  height: 580px;
+  height: 720px;
   background-image: url("../../assets/images/fonddecran.jpg");
   background-position: 50% 50%;
   background-size: cover;
@@ -14,7 +14,7 @@ body, * {
 
 .imgdefondopaque {
   width: 100%;
-  height: 580px;
+  height: 720px;
   background-image: url("../../assets/images/fonddecranopaque.jpg");
   background-position: 50% 50%;
   background-size: cover;
@@ -23,7 +23,8 @@ body, * {
 .slogan {
   animation-duration: 3s;
   animation-name: bounceInLeft;
-  font-size: 4em; }
+  font-size: 4em;
+  font-family: Oswald; }
 
 .contentbase {
   width: 100%;
@@ -32,6 +33,32 @@ body, * {
   justify-content: center;
   align-items: center; }
 
+.textconcept {
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1em;
+  margin-top: 5px; }
+
+.textkitdujardinier {
+  background-color: white;
+  margin-top: 15px;
+  font-size: 1.1em; }
+
+ul {
+  list-style-type: none; }
+
+@media screen and (max-width: 600px) {
+  .pp {
+    font-size: 0.75em; } }
+@media screen and (max-width: 400px) {
+  .pp {
+    font-size: 0.72em; } }
+@media screen and (max-width: 350px) {
+  .pp {
+    font-size: 0.66em; } }
 .logo {
   height: 70px;
   width: 70px; }
@@ -50,13 +77,17 @@ body, * {
 .navbar-nav {
   font-size: 1.3em; }
 
+.nav-link {
+  font-family: Oswald; }
+
 .footer {
   height: 60px;
   background-color: #0088CC;
   font-size: 0.7em; }
 
 .footer p {
-  margin: 0; }
+  margin: 0;
+  font-family: Oswald; }
 
 @media screen and (max-width: 600px) {
   .footer {
