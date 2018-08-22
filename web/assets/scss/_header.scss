@@ -1,8 +1,23 @@
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
 }
 
 .navbar-collapse {
   flex-grow: 0;
+}
+
+.navbar-toggler-icon{
+  background-color: red;
+}
+
+.nav-itema {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+
+.navbar-nav {
+  font-size: 1.3em;
 }

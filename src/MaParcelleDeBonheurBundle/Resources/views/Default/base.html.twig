@@ -15,6 +15,7 @@
     <link rel="icon" sizes="64x64" href="{{ asset('assets/images/favicons/favicon-64.png') }}" type="image/png">
     <link rel="icon" sizes="96x96" href="{{ asset('assets/images/favicons/favicon-96.png') }}" type="image/png">
 
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <title>Ma Parcelle de Bonheur</title>
 </head>
@@ -29,33 +30,31 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav ">
-                <div class="nav-item ">
+                <div class="nav-itema ">
                     <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_le_concept') }}">Le concept</a>
                 </div>
-                <div class="nav-item">
+                <div class="nav-itema">
                     <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_ma_parcelle') }}">Ma parcelle</a>
                 </div>
-                <div class="nav-item">
+                <div class="nav-itema">
                     <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_le_kit_du_jardinier') }}">Mon kit du jardinier</a>
                 </div>
                 <div class="nav-item">
                     <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_homepage') }}"><img class="logo" src="{{ asset('assets/images/LogoMatius.png') }}" alt=""></a>
                 </div>
-                <div class="nav-item ">
+                <div class="nav-itema ">
                     <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_les_plus_du_patron') }}">Les Plus du patron</a>
                 </div>
-                <div class="nav-item ">
+                <div class="nav-itema ">
                     <a class="nav-link" href="{{ path('ma_parcelle_de_bonheur_reserver') }}">Réservation</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="imgdefond">
 {% block content %}
 
 {% endblock %}
-    </div>
 
     <div class="container-fluid footer">
         <div class="container">
