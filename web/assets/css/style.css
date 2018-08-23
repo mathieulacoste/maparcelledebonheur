@@ -47,12 +47,62 @@ body, * {
   margin-top: 15px;
   font-size: 1.1em; }
 
+.imagekitdujardinier {
+  height: 250px;
+  width: 200px;
+  margin-top: 20px; }
+
 ul {
   list-style-type: none; }
 
+.textmaparcelle {
+  background-color: white;
+  font-size: 1em;
+  margin-top: 5px; }
+
+table {
+  border-collapse: collapse; }
+
+td {
+  border: 0.5px solid #0088CC;
+  padding: 3px 3px 3px 3px;
+  font-size: 0.9em; }
+
+td:nth-child(1) {
+  text-transform: uppercase; }
+
+.tableau {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+thead {
+  text-transform: uppercase; }
+
+@media screen and (max-width: 990px) {
+  .imagekitdujardinier {
+    display: none; } }
 @media screen and (max-width: 600px) {
   .textconcept {
+    font-size: 0.75em; }
+
+  td {
+    font-size: 0.8em; } }
+@media screen and (max-width: 500px) {
+  td {
     font-size: 0.75em; } }
+@media screen and (max-width: 450px) {
+  td {
+    font-size: 0.7em; } }
+@media screen and (max-width: 415px) {
+  td {
+    font-size: 0.65em; } }
+@media screen and (max-width: 375px) {
+  td {
+    font-size: 0.64em; } }
+@media screen and (max-width: 350px) {
+  td {
+    font-size: 0.56em; } }
 @media screen and (max-width: 400px) {
   .textconcept {
     font-size: 0.72em; } }
