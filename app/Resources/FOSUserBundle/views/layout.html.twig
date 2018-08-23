@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="{{ asset('assets/css/main.css')}}">
-<div class="formtout">
-{%  block content %}
+{% extends '@MaParcelleDeBonheur/Default/base.html.twig' %}
 
+{%  block content %}
+    <div class="imgdefondopaqueback">
     {% if app.request.hasPreviousSession %}
         {% for type, messages in app.session.flashbag.all() %}
             {% for message in messages %}
@@ -16,5 +16,6 @@
         {% block fos_user_content %}
         {% endblock fos_user_content %}
     </div>
+
+    </div>
 {%  endblock %}
-</div>
