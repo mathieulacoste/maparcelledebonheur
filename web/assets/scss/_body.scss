@@ -127,6 +127,12 @@ thead {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .textconcept {
+    font-size: 0.72em;
+  }
+}
+
 @media screen and (max-width: 375px) {
   td {
     font-size: 0.64em;
@@ -137,16 +143,8 @@ thead {
   td {
     font-size: 0.56em;
   }
-}
-
-@media screen and (max-width: 400px) {
   .textconcept {
-    font-size: 0.72em;
+    font-size: 0.66em;
   }
 }
 
-@media screen and (max-width: 350px){
-.textconcept {
-  font-size: 0.66em;
-}
-}

@@ -97,16 +97,16 @@ thead {
 @media screen and (max-width: 415px) {
   td {
     font-size: 0.65em; } }
+@media screen and (max-width: 400px) {
+  .textconcept {
+    font-size: 0.72em; } }
 @media screen and (max-width: 375px) {
   td {
     font-size: 0.64em; } }
 @media screen and (max-width: 350px) {
   td {
-    font-size: 0.56em; } }
-@media screen and (max-width: 400px) {
-  .textconcept {
-    font-size: 0.72em; } }
-@media screen and (max-width: 350px) {
+    font-size: 0.56em; }
+
   .textconcept {
     font-size: 0.66em; } }
 .logo {
