@@ -20,14 +20,6 @@ body, * {
   background-size: cover;
   background-repeat: no-repeat; }
 
-.imgdefondopaqueback {
-  width: 100%;
-  height: 600px;
-  background-image: url("../../assets/images/fonddecranopaque.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
 .slogan {
   animation-duration: 3s;
   animation-name: bounceInLeft;
@@ -212,5 +204,20 @@ thead {
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft; }
+
+.imgdefondopaqueback {
+  width: 100%;
+  height: 600px;
+  background-image: url("../../assets/images/fonddecranopaque.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.formchamp {
+  margin-left: 30px; }
+
+.formchampsubmit {
+  margin-top: 20px;
+  margin-left: 30px; }
 
 /*# sourceMappingURL=style.css.map */
