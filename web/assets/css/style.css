@@ -24,7 +24,8 @@ body, * {
   animation-duration: 3s;
   animation-name: bounceInLeft;
   font-size: 4em;
-  font-family: Oswald; }
+  font-family: Oswald;
+  color: white; }
 
 .contentbase {
   width: 100%;
@@ -141,7 +142,7 @@ thead {
 
 .footer {
   height: 60px;
-  background-color: #0088CC;
+  background-color: #DADADA;
   font-size: 0.7em; }
 
 .footer p {
