@@ -76,3 +76,9 @@ fos_user:
     from_email:
         address: "mathieu.lacoste@lapiscine.pro"
         sender_name: "Mathieu Lacoste"
+
+easy_admin:
+    entities:
+        - MaParcelleDeBonheurBundle\Entity\Articles
+        - MaParcelleDeBonheurBundle\Entity\Locataires
+        - MaParcelleDeBonheurBundle\Entity\Parcelles

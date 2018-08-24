@@ -21,15 +21,3 @@ ma_parcelle_de_bonheur_les_plus_du_patron:
 ma_parcelle_de_bonheur_reserver:
     path:     /reservation
     defaults: { _controller: MaParcelleDeBonheurBundle:Default:reserver }
-
-ma_parcelle_de_bonheur_admin:
-    path:     /admin
-    defaults: { _controller: MaParcelleDeBonheurBundle:Default:admin }
-
-ma_parcelle_de_bonheur_admin_parcelles:
-    path:     /admin/parcelles
-    defaults: { _controller: MaParcelleDeBonheurBundle:Default:gestiondesparcelles }
-
-ma_parcelle_de_bonheur_admin_articles:
-    path:     /admin/articles
-    defaults: { _controller: MaParcelleDeBonheurBundle:Default:gestiondesarticles }
