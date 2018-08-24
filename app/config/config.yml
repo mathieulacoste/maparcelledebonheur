@@ -79,6 +79,9 @@ fos_user:
 
 easy_admin:
     entities:
-        - MaParcelleDeBonheurBundle\Entity\Articles
-        - MaParcelleDeBonheurBundle\Entity\Locataires
-        - MaParcelleDeBonheurBundle\Entity\Parcelles
+        Articles:
+            class: MaParcelleDeBonheurBundle\Entity\Articles
+        Locataires:
+            class: MaParcelleDeBonheurBundle\Entity\Locataires
+        Parcelles:
+            class: MaParcelleDeBonheurBundle\Entity\Parcelles

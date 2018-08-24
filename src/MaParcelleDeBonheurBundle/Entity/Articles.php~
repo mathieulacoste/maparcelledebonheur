@@ -110,3 +110,4 @@ class Articles
         return $this->id;
     }
 }
+

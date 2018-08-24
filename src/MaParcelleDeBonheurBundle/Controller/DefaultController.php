@@ -31,7 +31,7 @@ class DefaultController extends Controller
         return $this->render('@MaParcelleDeBonheur/Default/lesplusdupatron.html.twig');
     }
 
-    public function reserverAction()
+    public function contactAction()
     {
         return $this->render('@MaParcelleDeBonheur/Default/reservation.html.twig');
     }

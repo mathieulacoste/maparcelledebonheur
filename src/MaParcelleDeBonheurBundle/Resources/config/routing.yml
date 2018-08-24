@@ -18,6 +18,6 @@ ma_parcelle_de_bonheur_les_plus_du_patron:
     path:     /les_plus_du_patron
     defaults: { _controller: MaParcelleDeBonheurBundle:Default:lesplusdupatron }
 
-ma_parcelle_de_bonheur_reserver:
-    path:     /reservation
-    defaults: { _controller: MaParcelleDeBonheurBundle:Default:reserver }
+ma_parcelle_de_bonheur_contact:
+    path:     /contact
+    defaults: { _controller: MaParcelleDeBonheurBundle:Default:contact }
