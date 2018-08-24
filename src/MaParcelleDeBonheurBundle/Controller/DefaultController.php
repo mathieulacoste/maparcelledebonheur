@@ -8,46 +8,54 @@ class DefaultController extends Controller
 {
     public function homepageAction()
     {
-        return $this->render('@MaParcelleDeBonheur/Default/homepage.html.twig');
+        $titrePage = "Ma parcelle de bonheur";
+        return $this->render('@MaParcelleDeBonheur/Default/homepage.html.twig', array(
+            'titrepage' => $titrePage,
+        ));
     }
 
     public function leconceptAction()
     {
-        return $this->render('@MaParcelleDeBonheur/Default/leconcept.html.twig');
+        $titrePage = "Le concept";
+        return $this->render('@MaParcelleDeBonheur/Default/leconcept.html.twig', array(
+            'titrepage' => $titrePage,
+        ));
     }
 
     public function maparcelleAction()
     {
-        return $this->render('@MaParcelleDeBonheur/Default/maparcelle.html.twig');
+        $titrePage = "Ma parcelle";
+        return $this->render('@MaParcelleDeBonheur/Default/maparcelle.html.twig', array(
+            'titrepage' => $titrePage,
+        ));
     }
 
     public function lekitdujardinierAction()
     {
-        return $this->render('@MaParcelleDeBonheur/Default/lekitdujardinier.html.twig');
+        $titrePage = "Mon kit du jardinier";
+        return $this->render('@MaParcelleDeBonheur/Default/lekitdujardinier.html.twig', array(
+            'titrepage' => $titrePage,
+        ));
     }
 
     public function lesplusdupatronAction()
     {
-        return $this->render('@MaParcelleDeBonheur/Default/lesplusdupatron.html.twig');
+        $titrePage = "Les Plus du patron";
+        return $this->render('@MaParcelleDeBonheur/Default/lesplusdupatron.html.twig', array(
+            'titrepage' => $titrePage,
+        ));
     }
 
     public function reserverAction()
     {
-        return $this->render('@MaParcelleDeBonheur/Default/reservation.html.twig');
+        $titrePage = "Contact";
+        return $this->render('@MaParcelleDeBonheur/Default/reservation.html.twig', array(
+            'titrepage' => $titrePage,
+        ));
     }
 
     public function adminAction()
     {
         return $this->render('@MaParcelleDeBonheur/Default/admin.html.twig');
-    }
-
-    public function gestiondesparcellesAction()
-    {
-        return $this->render('@MaParcelleDeBonheur/Default/parcelles.html.twig');
-    }
-
-    public function gestiondesarticlesAction()
-    {
-        return $this->render('@MaParcelleDeBonheur/Default/articles.html.twig');
     }
 }
