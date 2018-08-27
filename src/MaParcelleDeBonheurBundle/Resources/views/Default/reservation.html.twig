@@ -8,25 +8,25 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="offset-lg-1 col-lg-10 text-center">
+                    <div class="offset-lg-5 col-lg-2 text-center">
                         {{ form_start(formView) }}
 
-                        <div>{{ form_label(formView.name,'Nom') }}</div>
+                        <div class="textformulaire">{{ form_label(formView.name,'Nom') }}</div>
                         <div>{{ form_widget(formView.name) }}</div>
 
-                        <div>{{ form_label(formView.firstname,'Prénom') }}</div>
+                        <div class="textformulaire">{{ form_label(formView.firstname,'Prénom') }}</div>
                         <div>{{ form_widget(formView.firstname) }}</div>
 
-                        <div>{{ form_label(formView.mail,'Adresse Mail') }}</div>
+                        <div class="textformulaire">{{ form_label(formView.mail,'Adresse Mail') }}</div>
                         <div>{{ form_widget(formView.mail) }}</div>
 
-                        <div>{{ form_label(formView.phonenumber,'Numéro de Téléphone') }}</div>
+                        <div class="textformulaire">{{ form_label(formView.phonenumber,'Numéro de Téléphone') }}</div>
                         <div>{{ form_widget(formView.phonenumber) }}</div>
 
-                        <div>{{ form_label(formView.subject,'Sujet') }}</div>
+                        <div class="textformulaire">{{ form_label(formView.subject,'Sujet') }}</div>
                         <div>{{ form_widget(formView.subject) }}</div>
 
-                        <div>{{ form_label(formView.message,'Votre Message') }}</div>
+                        <div class="textformulaire">{{ form_label(formView.message,'Votre Message') }}</div>
                         <div>{{ form_widget(formView.message) }}</div>
 
                         {{ form_end(formView) }}
