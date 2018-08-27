@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="MaParcelleDeBonheurBundle\Entity\Contact"  repository-class="MaParcelleDeBonheurBundle\Repository\Contact">
+
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/></id>
+        <field name="name" type="text" column="nom" />
+        <field name="firstname" type="text" column="prenom" />
+        <field name="mail" type="text" column="mail" />
+        <field name="phonenumber" type="integer" column="numero" />
+        <field name="subject" type="text" column="sujet" />
+        <field name="message" type="text" column="message" />
+    </entity>
+
+</doctrine-mapping>
