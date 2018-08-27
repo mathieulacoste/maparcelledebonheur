@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eedb6c35-450a-434a-a71b-b96fa5cc7caf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/Doctrine/Contact.orm.xml" afterDir="false" />
-    </list>
+    <list default="true" id="eedb6c35-450a-434a-a71b-b96fa5cc7caf" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +32,23 @@
           <entry key="css" value="7" />
           <entry key="json" value="4" />
           <entry key="map" value="1" />
-          <entry key="php" value="9" />
+          <entry key="php" value="12" />
           <entry key="scss" value="32" />
           <entry key="twig" value="51" />
           <entry key="xml" value="13" />
-          <entry key="yml" value="20" />
+          <entry key="yml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
           <entry key="JSON" value="4" />
-          <entry key="PHP" value="9" />
+          <entry key="PHP" value="12" />
           <entry key="SCSS" value="32" />
           <entry key="SourceMap" value="1" />
           <entry key="Twig" value="51" />
           <entry key="XML" value="13" />
-          <entry key="YAML" value="20" />
+          <entry key="YAML" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -105,6 +103,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="e#56#113#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/lesplusdupatronarticle.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -131,21 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/Doctrine/Contact.orm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/Doctrine/Articles.orm.xml">
+        <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Form/ContactType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" selection-end-line="15" selection-end-column="19" />
-            </state>
+            <state relative-caret-position="-124" />
           </provider>
         </entry>
       </file>
@@ -313,6 +321,13 @@
               <item name="ma_parcelle_de_bonheur" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="MaParcelleDeBonheurBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ma_parcelle_de_bonheur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ma_parcelle_de_bonheur" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MaParcelleDeBonheurBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,15 +337,6 @@
               <item name="MaParcelleDeBonheurBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ma_parcelle_de_bonheur" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ma_parcelle_de_bonheur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MaParcelleDeBonheurBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="Doctrine" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -393,12 +399,12 @@
       <workItem from="1535099074747" duration="11605000" />
       <workItem from="1535116753883" duration="5012000" />
       <workItem from="1535311702470" duration="268000" />
-      <workItem from="1535360921450" duration="9174000" />
+      <workItem from="1535360921450" duration="9427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90537000" />
+    <option name="totallyTimeSpent" value="90790000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,8 +417,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="29" width="1280" height="707" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49747476" visible="true" weight="0.25121164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49747476" visible="true" weight="0.25121164" />
       <window_info id="Structure" order="1" sideWeight="0.50252527" side_tool="true" weight="0.26494345" />
       <window_info id="Favorites" order="2" sideWeight="0.50252527" side_tool="true" weight="0.26494345" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -424,7 +431,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.35284552" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.35284552" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -461,12 +468,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/profile.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/_vars.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -655,13 +656,6 @@
     <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/articles.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -697,16 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#56#113#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/scss/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -728,12 +712,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/lesplusdupatronarticle.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/Doctrine/Contact.orm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="150">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/Doctrine/Articles.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Entity/Contact.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/scss/_body.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -742,17 +736,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/Doctrine/Articles.orm.xml">
+    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="141">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/Doctrine/Contact.orm.xml">
+    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Form/ContactType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="-124" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#56#113#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/lesplusdupatronarticle.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
