@@ -3,6 +3,7 @@
 namespace MaParcelleDeBonheurBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use MaParcelleDeBonheurBundle\Entity\Articles;
 
 class DefaultController extends Controller
 {
@@ -28,7 +29,20 @@ class DefaultController extends Controller
 
     public function lesplusdupatronAction()
     {
-        return $this->render('@MaParcelleDeBonheur/Default/lesplusdupatron.html.twig');
+        $articles = $this->getDoctrine()->getRepository(articles::class)->findAll();
+
+        return $this->render('@MaParcelleDeBonheur/Default/lesplusdupatron.html.twig',array(
+            'articles'=>$articles,
+        ));
+    }
+
+    public function lesplusdupatronarticleAction($id)
+    {
+        $article = $this->getDoctrine()->getRepository(articles::class)->find($id);
+
+        return $this->render('@MaParcelleDeBonheur/Default/lesplusdupatronarticle.html.twig',array(
+            'article'=>$article,
+        ));
     }
 
     public function contactAction()

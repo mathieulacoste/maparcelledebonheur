@@ -4,8 +4,11 @@
 
 {% block content %}
     <div class="imgdefondopaque">
-
-        gggg
+        <ul>
+        {% for article in articles %}
+                <li><a href="{{ path('ma_parcelle_de_bonheur_les_plus_du_patron_article',{'id':article.id}) }}">{{ article.title }}</a></li>
+        {% endfor %}
+        </ul>
 
     </div>
 {% endblock %}

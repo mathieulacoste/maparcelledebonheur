@@ -1,0 +1,11 @@
+{% extends '@MaParcelleDeBonheur/Default/base.html.twig' %}
+
+{% block title %} <title> L'actualité du moment </title> {% endblock %}
+
+{% block content %}
+    <div class="imgdefondopaque">
+{{ article.title }}
+{{ article.content }}
+    </div>
+
+{% endblock %}
