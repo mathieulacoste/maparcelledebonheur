@@ -9,9 +9,9 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="offset-lg-1 col-lg-10 text-center ">
+                    <div class="offset-lg-2 col-lg-8 text-center ">
                     <ul>
-                        {% for article in articles %}
+                        {% for article in articles|slice(0,15) %} <!-- Permet de ne faire apparaître que 15 articles -->
                             <li class="textarticles"><a href="{{ path('ma_parcelle_de_bonheur_les_plus_du_patron_article',{'id':article.id}) }}">{{ article.title }} - {{ article.date }}</a></li>
                         {% endfor %}
                     </ul>
