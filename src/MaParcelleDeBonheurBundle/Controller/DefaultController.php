@@ -2,8 +2,11 @@
 
 namespace MaParcelleDeBonheurBundle\Controller;
 
+use MaParcelleDeBonheurBundle\Entity\Contact;
+use MaParcelleDeBonheurBundle\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use MaParcelleDeBonheurBundle\Entity\Articles;
+use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
@@ -45,8 +48,24 @@ class DefaultController extends Controller
         ));
     }
 
-    public function contactAction()
+    public function contactAction(Request $request)
     {
-        return $this->render('@MaParcelleDeBonheur/Default/reservation.html.twig');
+        $contact = new Contact();
+        $form = $this->createForm(ContactType::class, $contact);
+        $formView = $form ->createView();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted()&& $form->isValid()){
+            $contact = $form->getData();
+            $entitymanager = $this->getDoctrine()->getManager();
+            $entitymanager->persist($contact);
+            $entitymanager->flush();
+            return $this->redirectToRoute('ma_parcelle_de_bonheur_homepage');
+        }
+
+        return $this->render('@MaParcelleDeBonheur/Default/reservation.html.twig',array(
+            'formView'=>$formView,
+        ));
     }
 }
