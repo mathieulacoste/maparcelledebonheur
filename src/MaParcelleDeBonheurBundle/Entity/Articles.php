@@ -109,4 +109,33 @@ class Articles
     {
         return $this->id;
     }
+    /**
+     * @var string
+     */
+    private $date;
+
+
+    /**
+     * Set date.
+     *
+     * @param string $date
+     *
+     * @return Articles
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+
+        return $this;
+    }
+
+    /**
+     * Get date.
+     *
+     * @return string
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
 }

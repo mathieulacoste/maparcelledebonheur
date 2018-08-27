@@ -61,6 +61,27 @@ ul {
   font-size: 1em;
   margin-top: 5px; }
 
+.textarticles {
+  transition: all 1s;
+  background-color: white;
+  font-size: 1.3em;
+  margin-top: 5px;
+  background-size: cover;
+  text-decoration: none; }
+  .textarticles a {
+    color: black; }
+  .textarticles a:hover {
+    color: #00a65a; }
+
+.texttitre {
+  background-color: white;
+  margin-top: 5px; }
+
+.textarticle {
+  background-color: white;
+  font-size: 1em;
+  margin-top: 5px; }
+
 table {
   border-collapse: collapse; }
 

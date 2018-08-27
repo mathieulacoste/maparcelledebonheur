@@ -3,12 +3,22 @@
 {% block title %} <title> Les Plus du patron </title> {% endblock %}
 
 {% block content %}
+
     <div class="imgdefondopaque">
-        <ul>
-        {% for article in articles %}
-                <li><a href="{{ path('ma_parcelle_de_bonheur_les_plus_du_patron_article',{'id':article.id}) }}">{{ article.title }}</a></li>
-        {% endfor %}
-        </ul>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-10 text-center ">
+                    <ul>
+                        {% for article in articles %}
+                            <li class="textarticles"><a href="{{ path('ma_parcelle_de_bonheur_les_plus_du_patron_article',{'id':article.id}) }}">{{ article.title }} - {{ article.date }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 {% endblock %}
