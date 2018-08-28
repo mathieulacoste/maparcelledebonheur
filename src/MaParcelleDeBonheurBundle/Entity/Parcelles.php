@@ -273,4 +273,33 @@ class Parcelles
     {
         return $this->area;
     }
+    /**
+     * @var string
+     */
+    private $matricule;
+
+
+    /**
+     * Set matricule.
+     *
+     * @param string $matricule
+     *
+     * @return Parcelles
+     */
+    public function setMatricule($matricule)
+    {
+        $this->matricule = $matricule;
+
+        return $this;
+    }
+
+    /**
+     * Get matricule.
+     *
+     * @return string
+     */
+    public function getMatricule()
+    {
+        return $this->matricule;
+    }
 }

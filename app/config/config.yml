@@ -134,19 +134,23 @@ easy_admin:
         Parcelles:
             class: MaParcelleDeBonheurBundle\Entity\Parcelles
             list:
-                fields: [ {property: 'street', label: 'Allée'},
+                fields: [ {property: 'matricule', label: 'Matricule'},
+                          {property: 'street', label: 'Allée'},
                           {property: 'number', label: 'Numéro'},
                           {property: 'area', label: 'Superficie'}]
             show:
-                fields: [ {property: 'street', label: 'Allée'},
+                fields: [ {property: 'matricule', label: 'Matricule'},
+                          {property: 'street', label: 'Allée'},
                           {property: 'number', label: 'Numéro'},
                           {property: 'area', label: 'Superficie'}]
             edit:
-                fields: [ {property: 'street', label: 'Allée'},
+                fields: [ {property: 'matricule', label: 'Matricule'},
+                          {property: 'street', label: 'Allée'},
                           {property: 'number', label: 'Numéro'},
                           {property: 'area', label: 'Superficie'}]
             form:
-                fields: [ {property: 'street', label: 'Allée'},
+                fields: [ {property: 'matricule', label: 'Matricule'},
+                          {property: 'street', label: 'Allée'},
                           {property: 'number', label: 'Numéro'},
                           {property: 'area', label: 'Superficie'}]
         Contact:
