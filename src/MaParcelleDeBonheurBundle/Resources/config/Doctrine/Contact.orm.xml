@@ -8,11 +8,11 @@
 
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/></id>
-        <field name="name" type="text" column="nom" />
-        <field name="firstname" type="text" column="prenom" />
-        <field name="mail" type="text" column="mail" />
+        <field name="name" type="string" column="nom" />
+        <field name="firstname" type="string" column="prenom" />
+        <field name="mail" type="string" column="mail" />
         <field name="phonenumber" type="integer" column="numero" />
-        <field name="subject" type="text" column="sujet" />
+        <field name="subject" type="string" column="sujet" />
         <field name="message" type="text" column="message" />
     </entity>
 

@@ -8,7 +8,7 @@
 
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/></id>
-        <field name="street" type="text" column="allee" />
+        <field name="street" type="string" column="allee" />
         <field name="number" type="integer" column="numero" />
         <field name="area" type="integer" column="superficie" />
     </entity>

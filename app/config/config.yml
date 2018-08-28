@@ -82,28 +82,98 @@ easy_admin:
         Articles:
             class: MaParcelleDeBonheurBundle\Entity\Articles
             list:
-                fields: ['title','date','content']
+                fields: [ {property: 'title', label: 'Titre'},
+                          'date',
+                          {property: 'content', label: 'Contenu'}]
             show:
-                fields: ['title','date','content']
+                fields: [ {property: 'title', label: 'Titre'},
+                          'date',
+                          {property: 'content', label: 'Contenu'}]
+            edit:
+                fields: [ {property: 'title', label: 'Titre'},
+                          'date',
+                          {property: 'content', label: 'Contenu'}]
+            form:
+                fields: [ {property: 'title', label: 'Titre'},
+                          'date',
+                          {property: 'content', label: 'Contenu'}]
         Locataires:
             class: MaParcelleDeBonheurBundle\Entity\Locataires
             list:
-                fields: ['name','firstname','mail','phonenumber','adress','postalCode','city']
+                fields: [ {property: 'name', label: 'Nom'},
+                          {property: 'firstname', label: 'Prénom'},
+                          {property: 'mail', label: 'Adresse Mail'},
+                          {property: 'phonenumber', label: 'Téléphone'},
+                          {property: 'adress', label: 'Adresse'},
+                          {property: 'postalCode', label: 'Code Postal'},
+                          {property: 'city', label: 'Ville'}]
             show:
-                fields: ['name','firstname','mail','phonenumber','adress','postalCode','city']
+                fields: [ {property: 'name', label: 'Nom'},
+                          {property: 'firstname', label: 'Prénom'},
+                          {property: 'mail', label: 'Adresse Mail'},
+                          {property: 'phonenumber', label: 'Téléphone'},
+                          {property: 'adress', label: 'Adresse'},
+                          {property: 'postalCode', label: 'Code Postal'},
+                          {property: 'city', label: 'Ville'}]
+            edit:
+                fields: [ {property: 'name', label: 'Nom'},
+                          {property: 'firstname', label: 'Prénom'},
+                          {property: 'mail', label: 'Adresse Mail'},
+                          {property: 'phonenumber', label: 'Téléphone'},
+                          {property: 'adress', label: 'Adresse'},
+                          {property: 'postalCode', label: 'Code Postal'},
+                          {property: 'city', label: 'Ville'}]
+            form:
+                fields: [ {property: 'name', label: 'Nom'},
+                          {property: 'firstname', label: 'Prénom'},
+                          {property: 'mail', label: 'Adresse Mail'},
+                          {property: 'phonenumber', label: 'Téléphone'},
+                          {property: 'adress', label: 'Adresse'},
+                          {property: 'postalCode', label: 'Code Postal'},
+                          {property: 'city', label: 'Ville'}]
         Parcelles:
             class: MaParcelleDeBonheurBundle\Entity\Parcelles
             list:
-                fields: ['street','number','area']
+                fields: [ {property: 'street', label: 'Allée'},
+                          {property: 'number', label: 'Numéro'},
+                          {property: 'area', label: 'Superficie'}]
             show:
-                fields: ['street','number','area']
+                fields: [ {property: 'street', label: 'Allée'},
+                          {property: 'number', label: 'Numéro'},
+                          {property: 'area', label: 'Superficie'}]
+            edit:
+                fields: [ {property: 'street', label: 'Allée'},
+                          {property: 'number', label: 'Numéro'},
+                          {property: 'area', label: 'Superficie'}]
+            form:
+                fields: [ {property: 'street', label: 'Allée'},
+                          {property: 'number', label: 'Numéro'},
+                          {property: 'area', label: 'Superficie'}]
         Contact:
             class: MaParcelleDeBonheurBundle\Entity\Contact
-            label: 'Contacts'
+            label: 'Contact'
             list:
-                fields: ['name','firstname','subject','message']
+                fields: [ {property: 'name', label: 'Nom'},
+                          {property: 'firstname', label: 'Prénom'},
+                          {property: 'subject', label: 'Sujet'},
+                          {property: 'message', label: 'Message'}]
             show:
-                fields: ['name','firstname','mail','phonenumber','subject','message']
+                fields: [ {property: 'name', label: 'Nom'},
+                          {property: 'firstname', label: 'Prénom'},
+                          {property: 'subject', label: 'Sujet'},
+                          {property: 'mail', label: 'Adresse Mail'},
+                          {property: 'phonenumber', label: 'Numéro'},
+                          {property: 'message', label: 'Message'}]
+            edit:
+                fields: [ {property: 'name', label: 'Nom'},
+                          {property: 'firstname', label: 'Prénom'},
+                          {property: 'subject', label: 'Sujet'},
+                          {property: 'message', label: 'Message'}]
+            form:
+                fields: [ {property: 'name', label: 'Nom'},
+                          {property: 'firstname', label: 'Prénom'},
+                          {property: 'subject', label: 'Sujet'},
+                          {property: 'message', label: 'Message'}]
         User:
             class: MaParcelleDeBonheurBundle\Entity\User
             label: 'Utilisateurs'
