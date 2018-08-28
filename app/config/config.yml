@@ -81,7 +81,40 @@ easy_admin:
     entities:
         Articles:
             class: MaParcelleDeBonheurBundle\Entity\Articles
+            list:
+                fields: ['title','date','content']
+            show:
+                fields: ['title','date','content']
         Locataires:
             class: MaParcelleDeBonheurBundle\Entity\Locataires
+            list:
+                fields: ['name','firstname','mail','phonenumber','adress','postalCode','city']
+            show:
+                fields: ['name','firstname','mail','phonenumber','adress','postalCode','city']
         Parcelles:
             class: MaParcelleDeBonheurBundle\Entity\Parcelles
+            list:
+                fields: ['street','number','area']
+            show:
+                fields: ['street','number','area']
+        Contact:
+            class: MaParcelleDeBonheurBundle\Entity\Contact
+            label: 'Contacts'
+            list:
+                fields: ['name','firstname','subject','message']
+            show:
+                fields: ['name','firstname','mail','phonenumber','subject','message']
+        User:
+            class: MaParcelleDeBonheurBundle\Entity\User
+            label: 'Utilisateurs'
+
+    design:
+        brand_color: '#0ba660'
+        assets:
+            favicon: 'assets/images/favicons/favicon.png'
+
+    show:
+        max_results: 30
+
+    list:
+        actions: ['show']

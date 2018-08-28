@@ -8,9 +8,9 @@
 
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/></id>
-        <field name="title" type="text" column="titre" />
+        <field name="title" type="string" column="titre" />
         <field name="content" type="text" column="contenu" />
-        <field name="date" type="text" column="date" />
+        <field name="date" type="string" column="date" />
     </entity>
 
 </doctrine-mapping>

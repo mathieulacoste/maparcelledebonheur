@@ -167,4 +167,62 @@ class Locataires
     {
         return $this->id;
     }
+    /**
+     * @var int
+     */
+    private $postalCode;
+
+    /**
+     * @var string
+     */
+    private $city;
+
+
+    /**
+     * Set postalCode.
+     *
+     * @param int $postalCode
+     *
+     * @return Locataires
+     */
+    public function setPostalCode($postalCode)
+    {
+        $this->postalCode = $postalCode;
+
+        return $this;
+    }
+
+    /**
+     * Get postalCode.
+     *
+     * @return int
+     */
+    public function getPostalCode()
+    {
+        return $this->postalCode;
+    }
+
+    /**
+     * Set city.
+     *
+     * @param string $city
+     *
+     * @return Locataires
+     */
+    public function setCity($city)
+    {
+        $this->city = $city;
+
+        return $this;
+    }
+
+    /**
+     * Get city.
+     *
+     * @return string
+     */
+    public function getCity()
+    {
+        return $this->city;
+    }
 }
