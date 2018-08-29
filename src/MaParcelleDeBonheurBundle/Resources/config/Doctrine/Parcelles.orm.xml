@@ -12,6 +12,12 @@
         <field name="street" type="string" column="allee" />
         <field name="number" type="integer" column="numero" />
         <field name="area" type="integer" column="superficie" />
+
+        <many-to-one
+                field="locataires"
+                target-entity="MaParcelleDeBonheurBundle\Entity\Locataires"
+                inversed-by="parcelles">
+        </many-to-one>
     </entity>
 
 </doctrine-mapping>

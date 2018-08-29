@@ -1,8 +1,8 @@
 imports:
-    - { resource: parameters.yml }
-    - { resource: security.yml }
-    - { resource: services.yml }
-    - { resource: "@MaParcelleDeBonheurBundle/Resources/config/services.yml" }
+- { resource: parameters.yml }
+- { resource: security.yml }
+- { resource: services.yml }
+- { resource: "@MaParcelleDeBonheurBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -103,60 +103,69 @@ easy_admin:
                 fields: [ {property: 'name', label: 'Nom'},
                           {property: 'firstname', label: 'Prénom'},
                           {property: 'mail', label: 'Adresse Mail'},
-                          {property: 'phonenumber', label: 'Téléphone'},
+                          {property: 'phonenumber', label: 'Téléphone', format: '0%u'}
                           {property: 'adress', label: 'Adresse'},
-                          {property: 'postalCode', label: 'Code Postal'},
-                          {property: 'city', label: 'Ville'}]
+                          {property: 'postalCode', label: 'Code Postal', format: '%u'},
+                          {property: 'city', label: 'Ville'},
+                          {property: 'parcelles', label: 'Parcelle(s)'}]
             show:
                 fields: [ {property: 'name', label: 'Nom'},
                           {property: 'firstname', label: 'Prénom'},
                           {property: 'mail', label: 'Adresse Mail'},
-                          {property: 'phonenumber', label: 'Téléphone'},
+                          {property: 'phonenumber', label: 'Téléphone', format: '0%u'}
                           {property: 'adress', label: 'Adresse'},
-                          {property: 'postalCode', label: 'Code Postal'},
-                          {property: 'city', label: 'Ville'}]
+                          {property: 'postalCode', label: 'Code Postal', format: '%u'},
+                          {property: 'city', label: 'Ville'},
+                          {property: 'parcelles', label: 'Parcelle(s)'}]
             edit:
                 fields: [ {property: 'name', label: 'Nom'},
                           {property: 'firstname', label: 'Prénom'},
                           {property: 'mail', label: 'Adresse Mail'},
-                          {property: 'phonenumber', label: 'Téléphone'},
+                          {property: 'phonenumber', label: 'Téléphone', format: '0%u'}
                           {property: 'adress', label: 'Adresse'},
-                          {property: 'postalCode', label: 'Code Postal'},
-                          {property: 'city', label: 'Ville'}]
+                          {property: 'postalCode', label: 'Code Postal', format: '%u'},
+                          {property: 'city', label: 'Ville'},
+                          {property: 'parcelles', label: 'Parcelle(s)', help: "ATTENTION, Passer par l'onglet Parcelles pour l'attribution"}]
             form:
                 fields: [ {property: 'name', label: 'Nom'},
                           {property: 'firstname', label: 'Prénom'},
                           {property: 'mail', label: 'Adresse Mail'},
-                          {property: 'phonenumber', label: 'Téléphone'},
+                          {property: 'phonenumber', label: 'Téléphone', format: '0%u'}
                           {property: 'adress', label: 'Adresse'},
-                          {property: 'postalCode', label: 'Code Postal'},
-                          {property: 'city', label: 'Ville'}]
+                          {property: 'postalCode', label: 'Code Postal', format: '%u'},
+                          {property: 'city', label: 'Ville'},
+                          {property: 'parcelles', label: 'Parcelle(s)', help: "ATTENTION, Passer par l'onglet Parcelles pour l'attribution"}]
         Parcelles:
             class: MaParcelleDeBonheurBundle\Entity\Parcelles
             list:
                 fields: [ {property: 'matricule', label: 'Matricule'},
                           {property: 'street', label: 'Allée'},
                           {property: 'number', label: 'Numéro'},
-                          {property: 'area', label: 'Superficie'}]
+                          {property: 'area', label: 'Superficie (m2)'},
+                          {property: 'locataires', label: 'Locataire'}]
             show:
                 fields: [ {property: 'matricule', label: 'Matricule'},
                           {property: 'street', label: 'Allée'},
                           {property: 'number', label: 'Numéro'},
-                          {property: 'area', label: 'Superficie'}]
+                          {property: 'area', label: 'Superficie (m2)'},
+                          {property: 'locataires', label: 'Locataire'}]
             edit:
                 fields: [ {property: 'matricule', label: 'Matricule'},
                           {property: 'street', label: 'Allée'},
                           {property: 'number', label: 'Numéro'},
-                          {property: 'area', label: 'Superficie'}]
+                          {property: 'area', label: 'Superficie (m2)'},
+                          {property: 'locataires', label: 'Locataire'}]
             form:
                 fields: [ {property: 'matricule', label: 'Matricule'},
                           {property: 'street', label: 'Allée'},
                           {property: 'number', label: 'Numéro'},
-                          {property: 'area', label: 'Superficie'}]
+                          {property: 'area', label: 'Superficie (m2)'},
+                          {property: 'locataires', label: 'Locataire'}]
         Contact:
             class: MaParcelleDeBonheurBundle\Entity\Contact
-            label: 'Contact'
+            label: 'Messages'
             list:
+                title: 'Messages reçus via le site'
                 fields: [ {property: 'name', label: 'Nom'},
                           {property: 'firstname', label: 'Prénom'},
                           {property: 'subject', label: 'Sujet'},
@@ -180,7 +189,14 @@ easy_admin:
                           {property: 'message', label: 'Message'}]
         User:
             class: MaParcelleDeBonheurBundle\Entity\User
-            label: 'Utilisateurs'
+            label: 'Administrateurs'
+            list:
+                title: 'Administrateurs du Site'
+                fields: [ {property: 'username', label: 'Identifiant'},
+                          {property: 'email', label: 'Email'},
+                          {property: 'enabled', label: 'Autorisé'},
+                          {property: 'roles', label: 'Type Administrateur'},
+                          {property: 'lastLogin', label: 'Dernière Connexion'}]
 
     design:
         brand_color: '#0ba660'

@@ -2,6 +2,9 @@
 
 namespace MaParcelleDeBonheurBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+
+
 /**
  * Locataires
  */
@@ -37,7 +40,10 @@ class Locataires
      */
     private $id;
 
-
+    public function __toString()
+    {
+        return $this->name;
+    }
     /**
      * Set name
      *
@@ -224,5 +230,53 @@ class Locataires
     public function getCity()
     {
         return $this->city;
+    }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $parcelles;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->parcelles = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add parcelle.
+     *
+     * @param \MaParcelleDeBonheurBundle\Entity\Parcelles $parcelle
+     *
+     * @return Locataires
+     */
+    public function addParcelle(\MaParcelleDeBonheurBundle\Entity\Parcelles $parcelle)
+    {
+        $this->parcelles[] = $parcelle;
+
+        return $this;
+    }
+
+    /**
+     * Remove parcelle.
+     *
+     * @param \MaParcelleDeBonheurBundle\Entity\Parcelles $parcelle
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeParcelle(\MaParcelleDeBonheurBundle\Entity\Parcelles $parcelle)
+    {
+        return $this->parcelles->removeElement($parcelle);
+    }
+
+    /**
+     * Get parcelles.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getParcelles()
+    {
+        return $this->parcelles;
     }
 }

@@ -15,6 +15,12 @@
         <field name="adress" type="string" column="adresse" />
         <field name="postalCode" type="integer" column="code_postal"/>
         <field name="city" type="string" column="ville"/>
+
+        <one-to-many
+                field="parcelles"
+                target-entity="MaParcelleDeBonheurBundle\Entity\Parcelles"
+                mapped-by="locataires">
+        </one-to-many>
     </entity>
 
 </doctrine-mapping>

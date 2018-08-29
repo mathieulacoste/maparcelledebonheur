@@ -21,171 +21,12 @@ class Parcelles
      */
     private $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=255)
-     */
-    private $name;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="firstname", type="string", length=255)
      */
-    private $firstname;
+    private $matricule;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="mail", type="string", length=255)
-     */
-    private $mail;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="phonenumber", type="string", length=255)
-     */
-    private $phonenumber;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="adress", type="string", length=255)
-     */
-    private $adress;
-
-
-    /**
-     * Get id
-     *
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set name
-     *
-     * @param string $name
-     *
-     * @return Parcelles
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * Set firstname
-     *
-     * @param string $firstname
-     *
-     * @return Parcelles
-     */
-    public function setFirstname($firstname)
-    {
-        $this->firstname = $firstname;
-
-        return $this;
-    }
-
-    /**
-     * Get firstname
-     *
-     * @return string
-     */
-    public function getFirstname()
-    {
-        return $this->firstname;
-    }
-
-    /**
-     * Set mail
-     *
-     * @param string $mail
-     *
-     * @return Parcelles
-     */
-    public function setMail($mail)
-    {
-        $this->mail = $mail;
-
-        return $this;
-    }
-
-    /**
-     * Get mail
-     *
-     * @return string
-     */
-    public function getMail()
-    {
-        return $this->mail;
-    }
-
-    /**
-     * Set phonenumber
-     *
-     * @param string $phonenumber
-     *
-     * @return Parcelles
-     */
-    public function setPhonenumber($phonenumber)
-    {
-        $this->phonenumber = $phonenumber;
-
-        return $this;
-    }
-
-    /**
-     * Get phonenumber
-     *
-     * @return string
-     */
-    public function getPhonenumber()
-    {
-        return $this->phonenumber;
-    }
-
-    /**
-     * Set adress
-     *
-     * @param string $adress
-     *
-     * @return Parcelles
-     */
-    public function setAdress($adress)
-    {
-        $this->adress = $adress;
-
-        return $this;
-    }
-
-    /**
-     * Get adress
-     *
-     * @return string
-     */
-    public function getAdress()
-    {
-        return $this->adress;
-    }
     /**
      * @var integer
      */
@@ -201,7 +42,10 @@ class Parcelles
      */
     private $area;
 
-
+    public function __toString()
+    {
+        return $this->matricule;
+    }
     /**
      * Set street
      *
@@ -272,5 +116,71 @@ class Parcelles
     public function getArea()
     {
         return $this->area;
+    }
+
+
+
+    /**
+     * Set matricule.
+     *
+     * @param string $matricule
+     *
+     * @return Parcelles
+     */
+    public function setMatricule($matricule)
+    {
+        $this->matricule = $matricule;
+
+        return $this;
+    }
+
+    /**
+     * Get matricule.
+     *
+     * @return string
+     */
+    public function getMatricule()
+    {
+        return $this->matricule;
+    }
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @var \MaParcelleDeBonheurBundle\Entity\Locataires
+     */
+    private $locataires;
+
+
+    /**
+     * Set locataires.
+     *
+     * @param \MaParcelleDeBonheurBundle\Entity\Locataires|null $locataires
+     *
+     * @return Parcelles
+     */
+    public function setLocataires(\MaParcelleDeBonheurBundle\Entity\Locataires $locataires = null)
+    {
+        $this->locataires = $locataires;
+
+        return $this;
+    }
+
+    /**
+     * Get locataires.
+     *
+     * @return \MaParcelleDeBonheurBundle\Entity\Locataires|null
+     */
+    public function getLocataires()
+    {
+        return $this->locataires;
     }
 }
