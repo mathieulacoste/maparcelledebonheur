@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new MaParcelleDeBonheurBundle\MaParcelleDeBonheurBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle(),
+            new FOS\CKEditorBundle\FOSCKEditorBundle(),
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

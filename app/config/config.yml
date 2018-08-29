@@ -96,7 +96,7 @@ easy_admin:
             form:
                 fields: [ {property: 'title', label: 'Titre'},
                           'date',
-                          {property: 'content', label: 'Contenu'}]
+                          {property: 'content', label: 'Contenu', type: 'ckeditor'}]
         Locataires:
             class: MaParcelleDeBonheurBundle\Entity\Locataires
             list:
@@ -208,3 +208,9 @@ easy_admin:
 
     list:
         actions: ['show']
+
+ivory_ck_editor:
+    configs:
+        my_config:
+            toolbar: full
+            uiColor: '#0ba660'
