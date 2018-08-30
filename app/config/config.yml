@@ -84,11 +84,11 @@ easy_admin:
             list:
                 fields: [ {property: 'title', label: 'Titre'},
                           'date',
-                          {property: 'content', label: 'Contenu'}]
+                          {property: 'content', label: 'Contenu', type: 'raw'}]
             show:
                 fields: [ {property: 'title', label: 'Titre'},
                           'date',
-                          {property: 'content', label: 'Contenu'}]
+                          {property: 'content', label: 'Contenu', type: 'raw'}]
             edit:
                 fields: [ {property: 'title', label: 'Titre'},
                           'date',
