@@ -19,15 +19,15 @@
     <session id="182023515">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="5" />
-          <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -59,9 +59,9 @@
           <entry key="css" value="74" />
           <entry key="php" value="941" />
           <entry key="scss" value="2100" />
-          <entry key="twig" value="4214" />
+          <entry key="twig" value="4221" />
           <entry key="xml" value="976" />
-          <entry key="yml" value="2522" />
+          <entry key="yml" value="2630" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -69,9 +69,9 @@
           <entry key="CSS" value="74" />
           <entry key="PHP" value="941" />
           <entry key="SCSS" value="2100" />
-          <entry key="Twig" value="4214" />
+          <entry key="Twig" value="4221" />
           <entry key="XML" value="976" />
-          <entry key="YAML" value="2522" />
+          <entry key="YAML" value="2630" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.actions">
@@ -120,8 +120,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="90" column="77" selection-start-line="90" selection-start-column="77" selection-end-line="90" selection-end-column="77" />
+            <state relative-caret-position="237">
+              <caret line="184" column="82" selection-start-line="184" selection-start-column="82" selection-end-line="184" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -129,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/lesplusdupatronarticle.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="180">
+              <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -190,7 +190,6 @@
         <option value="$PROJECT_DIR$/web/assets/scss/_header.scss" />
         <option value="$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Form/ContactType.php" />
         <option value="$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/lesplusdupatronarticle.html.twig" />
         <option value="$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/reservation.html.twig" />
         <option value="$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/base.html.twig" />
         <option value="$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/lesplusdupatron.html.twig" />
@@ -203,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/config/Doctrine/Articles.orm.xml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/web/assets/scss/_body.scss" />
+        <option value="$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/lesplusdupatronarticle.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
       </list>
     </option>
@@ -283,7 +283,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -348,6 +347,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,11 +410,13 @@
       <workItem from="1535449290681" duration="17230000" />
       <workItem from="1535549506898" duration="47000" />
       <workItem from="1535622206156" duration="287000" />
+      <workItem from="1535622507091" duration="134000" />
+      <workItem from="1535629846129" duration="957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118192000" />
+    <option name="totallyTimeSpent" value="119283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,9 +428,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="706" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="706" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49747476" visible="true" weight="0.2673667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49747476" visible="true" weight="0.27544427" />
       <window_info id="Structure" order="1" sideWeight="0.50252527" side_tool="true" weight="0.26494345" />
       <window_info id="Favorites" order="2" sideWeight="0.50252527" side_tool="true" weight="0.26494345" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -755,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/lesplusdupatronarticle.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/reservation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -769,10 +765,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaParcelleDeBonheurBundle/Resources/views/Default/lesplusdupatronarticle.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="90" column="77" selection-start-line="90" selection-start-column="77" selection-end-line="90" selection-end-column="77" />
+        <state relative-caret-position="237">
+          <caret line="184" column="82" selection-start-line="184" selection-start-column="82" selection-end-line="184" selection-end-column="82" />
         </state>
       </provider>
     </entry>
