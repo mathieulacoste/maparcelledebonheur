@@ -93,11 +93,11 @@ easy_admin:
             edit:
                 title: 'Articles'
                 fields: [ {property: 'title', label: 'Titre'},
-                          'date',
+                          {property: 'date', help: 'Titre 4, Police en 18, en gras et texte avec Police en 16'}
                           {property: 'content', label: 'Contenu'}]
             form:
                 fields: [ {property: 'title', label: 'Titre'},
-                          'date',
+                          {property: 'date', help: 'Titre 4, Police en 18, en gras et texte avec Police en 16'}
                           {property: 'content', label: 'Contenu', type: 'ckeditor'}]
         Locataires:
             class: MaParcelleDeBonheurBundle\Entity\Locataires

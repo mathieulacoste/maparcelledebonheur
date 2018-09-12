@@ -72,7 +72,6 @@ ul {
 }
 
 .textarticles{
-  transition: all 1s;
   background-color: white;
   font-size: 1.2em;
   margin-top: 5px;
@@ -86,15 +85,16 @@ color: #00a65a  }
 .texttitre{
   background-color: white;
   margin-top: 5px;
-  color: #0ba660
+  color: #0ba660;
 }
 
 .textarticle{
-  background-color: white;
+  background-color: whitesmoke;
   font-size: 1em;
   margin-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 3px;
 }
 
 .textformulaire {
@@ -107,6 +107,12 @@ color: #00a65a  }
 .fa-book-open {
   margin-right: 10px;
   color: #0ba660
+}
+
+.blocvert {
+  background-color: #209630;
+  width: 100%;
+  height: 180px;
 }
 
 table {
@@ -142,6 +148,12 @@ thead {
 @media screen and (max-width: 770px) {
   .textconcept {
     font-size: 0.95em;
+  }
+  .textarticle {
+    font-size: 0.5em;
+  }
+  .blocvert {
+    height: 400px;
   }
 }
 
@@ -182,17 +194,26 @@ thead {
   td {
     font-size: 0.65em;
   }
+  .blocvert {
+    height: 600px;
+  }
 }
 
 @media screen and (max-width: 390px) {
   .textconcept {
     font-size: 0.71em;
   }
+  .blocvert {
+    height: 800px;
+  }
 }
 
 @media screen and (max-width: 375px) {
   td {
     font-size: 0.64em;
+  }
+  .blocvert {
+    height: 900px;
   }
 }
 

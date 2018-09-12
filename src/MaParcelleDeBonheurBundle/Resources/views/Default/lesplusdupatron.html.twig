@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="offset-lg-2 col-lg-8 text-center ">
                     <ul>
-                        {% for article in articles|slice(0,15) %} <!-- Permet de ne faire apparaître que 15 articles -->
+                        {% for article in articles|slice(0,10) %} <!-- Permet de ne faire apparaître que 12 articles -->
                             <li class="textarticles"><i class="fas fa-book-open"></i><a href="{{ path('ma_parcelle_de_bonheur_les_plus_du_patron_article',{'id':article.id}) }}">{{ article.title }} - {{ article.date }}</a></li>
                         {% endfor %}
                     </ul>
